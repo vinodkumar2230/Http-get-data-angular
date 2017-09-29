@@ -1,0 +1,30 @@
+
+<!--<div class="card">
+
+  <ng-container *ngFor="let contact of data">
+    
+     <!--<h2>{{contact.["0"].Contractor.City.CityName}}</h2>-->
+     <!--<h2>{{contact.ContractorId}}</h2>-->
+
+      <!--{{contact | json}}-->
+ 
+
+  
+  <!--</ng-container>
+</div>  -->-->-->
+
+<h1>{{welcome}}</h1>
+                <table class="table">
+                    <tr>
+                        <th colspan="4">#</th>
+                        <th colspan="4">$id</th>
+                        <th colspan="4">$refId</th> 
+                        <th colspan="4">Load Types</th>
+                    </tr>
+                    <tr *ngFor="let contact of data; let i = index">
+                        <td colspan="4">{{i + 1}}</td>
+                        <td colspan="4">{{contact.LoadTypeId}}</td>
+                        
+                        <td colspan="4">{{contact.LoadName}}</td>
+                    </tr>
+                </table>
